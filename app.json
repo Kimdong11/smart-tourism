@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Smart-Tour",
+    "slug": "Smart-Tour",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "Smart-Tour"
+}
