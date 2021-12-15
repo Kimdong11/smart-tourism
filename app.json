@@ -1,11 +1,9 @@
 {
-  "expo": {
-    "name": "Smart-Tour",
-    "slug": "Smart-Tour",
-    "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
-  },
-  "name": "Smart-Tour"
+    "expo": {
+        "name": "스마트투어",
+        "slug": "Smart-Tour",
+        "version": "1.0.0",
+        "assetBundlePatterns": ["**/*"]
+    },
+    "name": "스마트투어"
 }
