@@ -62,14 +62,6 @@ const forest = ({ route, navigation: { navigate } }) => {
                 contents[i].hcnt_addr = contents[i].hcnt_addr.split(" ");
             }
         }
-        sortData.map((item) => {
-            preData.filter((data) => {
-                if (item.hcnt_id === data.hcnt_name) {
-                    return finalData.push(data);
-                }
-            });
-            return item;
-        });
         for (let i = 0; i < Math.ceil(preData.length / 2); i++) {
             content1[i] = preData[i];
         }
