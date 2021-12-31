@@ -5,17 +5,15 @@ import { useState } from "react/cjs/react.development";
 
 const halla = ({ route, navigation: { navigate } }) => {
     const [loading, setLoading] = useState(true);
-    const [displayData, setDisplayData] = useState([]);
     const [leftImages, setLeftImages] = useState([]);
     const [rightImages, setRightImages] = useState([]);
     const [wholeData, setWholeData] = useState([]);
 
-    let testData = [];
     let finalData = [];
     let sortData = [];
     let contents = [];
-    let content1 = [];
-    let content2 = [];
+    let leftContents = [];
+    let rightContents = [];
     const getContents = async () => {
         const results = await (
             await fetch(
@@ -29,9 +27,6 @@ const halla = ({ route, navigation: { navigate } }) => {
         const preData = await results.filter((data) => {
             const code = data.hcnt_sub_img;
             return code !== "";
-        });
-        testData = preData.filter((item) => {
-            return item.hcnt_rcmd_comt_sec === "" && item.hcnt_rcmd_comt_thd === "";
         });
         for (let i = 0; i < preData.length; i++) {
             contents[i] = preData[i];
@@ -72,13 +67,13 @@ const halla = ({ route, navigation: { navigate } }) => {
             return item;
         });
         for (let i = 0; i < Math.ceil(finalData.length / 2); i++) {
-            content1[i] = finalData[i];
+            leftContents[i] = finalData[i];
         }
         for (let i = Math.ceil(finalData.length / 2); i < finalData.length; i++) {
-            content2[i - Math.ceil(finalData.length / 2)] = finalData[i];
+            rightContents[i - Math.ceil(finalData.length / 2)] = finalData[i];
         }
-        setLeftImages(content1);
-        setRightImages(content2);
+        setLeftImages(leftContents);
+        setRightImages(rightContents);
         setWholeData(contents);
         setLoading(false);
     };
