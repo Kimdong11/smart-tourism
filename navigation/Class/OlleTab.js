@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import { View, Imagae, ActivityIndicator } from "react-native";
 import { colors } from "../../variables/colors";
-import halla from "../../screens/classes/nature/halla";
+import one2five from "../../screens/classes/olle/1to5";
+import six2ten from "../../screens/classes/olle/6to10";
+import eleven2fifteen from "../../screens/classes/olle/11to15";
+import sixteen2twentyone from "../../screens/classes/olle/16to21";
 
 const Material = createMaterialTopTabNavigator();
 
@@ -47,18 +50,12 @@ const OlleTab = ({ route }) => {
                     backgroundColor: colors.orangeRed,
                 },
             }}>
-            <Material.Screen
-                name={classes[1].hcnt_id}
-                component={halla}></Material.Screen>
-            <Material.Screen
-                name={classes[2].hcnt_id}
-                component={halla}></Material.Screen>
-            <Material.Screen
-                name={classes[3].hcnt_id}
-                component={halla}></Material.Screen>
+            <Material.Screen name={classes[1].hcnt_id} component={one2five}></Material.Screen>
+            <Material.Screen name={classes[2].hcnt_id} component={six2ten}></Material.Screen>
+            <Material.Screen name={classes[3].hcnt_id} component={eleven2fifteen}></Material.Screen>
             <Material.Screen
                 name={classes[4].hcnt_id}
-                component={halla}></Material.Screen>
+                component={sixteen2twentyone}></Material.Screen>
         </Material.Navigator>
     );
 };

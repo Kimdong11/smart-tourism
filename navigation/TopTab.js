@@ -4,7 +4,7 @@ import { createMaterialTopTabNavigator } from "@react-navigation/material-top-ta
 import NatureTab from "./Class/NatureTab";
 import SeaTab from "./Class/SeaTab";
 import { colors } from "../variables/colors";
-import SiteTab from "./Class/Site";
+import SiteTab from "./Class/SiteTab";
 import ActivityTab from "./Class/ActivityTab";
 import OlleTab from "./Class/OlleTab";
 
