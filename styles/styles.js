@@ -58,13 +58,13 @@ const styles = StyleSheet.create({
         justifyContent: "center",
     },
     main__contents: {
-        paddingHorizontal: 60,
-        paddingVertical: 30,
+        paddingHorizontal: 11,
+        paddingVertical: 12,
         alignItems: "center",
     },
     main__contents__logo: {
-        width: 200,
-        height: 200,
+        width: 120,
+        height: 120,
     },
     main__contents__text: {
         fontSize: 16,
