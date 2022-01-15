@@ -35,13 +35,13 @@ const styles = StyleSheet.create({
         marginTop: 60,
     },
     welcome__text__title: {
-        fontSize: 95,
+        fontSize: 45,
         fontWeight: "800",
         fontStyle: "italic",
         color: colors.orangeRed,
     },
     welcome__text__subtitle: {
-        fontSize: 30,
+        fontSize: 16,
         fontWeight: "500",
         fontStyle: "italic",
         color: colors.orangeRed,
